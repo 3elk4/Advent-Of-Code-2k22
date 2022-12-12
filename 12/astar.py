@@ -27,7 +27,7 @@ class AStar:
             r = current_r + cord[0] # dest r
             c = current_c + cord[1] # dest c
             if 0 <= r < grid_rows and 0 <= c < grid_cols:
-                if (ord(self.grid[r][c]) - ord(self.grid[current_r][current_c]) <= 1): # with abs func it is possible to climb up and down, now only up 
+                if (ord(self.grid[r][c]) - ord(self.grid[current_r][current_c]) <= 1): # with abs func it is possible to climb up and down (much shorter path), now only up 
                     c = Cell(r, c)
                     neighbours.append(c)
         return neighbours
