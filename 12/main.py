@@ -45,10 +45,3 @@ type = 'astar'
 
 part(1, start, end, type)
 part(2, start, end, type)
-
-
-
-
-
-
-
